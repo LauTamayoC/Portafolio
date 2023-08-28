@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8"> <!--Para reconocer todos los simbolos del lenguaje-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Libreria para importar iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Portafolio</title> <!--Lo que sale en la pestaña del navegador-->
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header class="encabezado"> 
-        <div>
-        <img class="fotoestudiante"src="./FotoPortafolio.jpg" alt="Fotografia">
-        </div>
-        <section class="datospersonales">
-            <h1>Laura Tamayo Cardona</h1>
-            <h3>Email: Tamayocl70@gmail.com</h3>
-            <h3>GitHub: LauTamayoC</h3>
-            <h3>Neocities: pweblauratamayo</h3>
-        </section>
-        <div>
-        <img class="logotipo" src="./child-613199_640.jpg" alt="Otra foto">
-        <div>
-//como puedo asignar un link a una etiquera <li>?
-    </header>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LAURA TAMAYO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi" >SOBRE MI</a></li>
+                    <li><a href="#portfolio" >PORTFOLIO</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
     <section>
        Bienvenido a mi portafolio! Soy Laura Tamayo Cardona estudiante de ingeniería informática
         Aqui podrás encontrar un poco de mi viaje en el campo de la informática
     </section>
+            <!-- SECCION INICIO -->
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="FotoPortafolio.jpg" alt="">
+                    </div>
+                    <h1>LAURA TAMAYO</h1>
+                    <h2>Estudiante ingeniería informática</h2>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-Instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-rss"></i></a>
+                    </div>
+                </div>
+            </section>
     <section>
         <article> <h2>Diseños</h2> 
+           
         <ol>
             <li>Diseño 1</li>
             <li>Diseño 2</li>
@@ -37,7 +61,7 @@
         </article>
         <article> <h2>Consultas</h2> 
         <ol>
-            <li>Consulta 1</li>
+            <li> <a href="https://correoiueedu-my.sharepoint.com/:w:/g/personal/ltamayo_correo_iue_edu_co/EdIxrt15_ctIjy1xVHQmW2IBrcff_U3766V3LBrzpQQJTw?e=byhvta"> Consulta 1 </a> </li>
             <li>Consulta 2</li>
             <li>Consulta 3</li>
             <li>Consulta 4</li>
@@ -45,7 +69,7 @@
         </article>
         <article> <h2>Talleres</h2> 
         <ol>
-            <li>Taller 1</li>
+            <li> <a href="https://github.com/LauTamayoC/Portafolio"> Taller 1 </a></li>
             <li>Taller 2</li>
             <li>Taller 3</li>
             <li>Taller 4</li>
